@@ -5,9 +5,7 @@ $(document).ready(function() {
             $('#todo_list').prepend(str);
     });                    
 
-
-    $('.item').click(function() {
-        $(this).remove();
-    }); 
-
+    $(document).on('click', '.item', function () {
+        $(this).remove(); 
+    });
 });
